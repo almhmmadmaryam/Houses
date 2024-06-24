@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="icon" type="image/x-icon" href="./logo.png" />
+
+    <script src="./script.js"></script>
+    <title>Properties</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>AF<span>A</span>K</h1>
+        </div>
+        <ul class="links">
+          <li class="link">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="link">
+            <a href="./AboutUs.html">About</a>
+          </li>
+          <li class="link active">
+            <a href="./Properties.html">Properties</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="properties container">
+      <div class="header">
+        <a href="./Form.html"><button>متابعة</button></a>
+      </div>
+      <table>
+        <tr>
+          <th>المدينة</th>
+          <th>تفاصيل</th>
+          <th>الايجار الشهري</th>
+          <th>اظهار التفاصيل</th>
+          <th>اختيار</th>
+        </tr>
+        <div class="apartment">
+          <tr
+            data-apartment="apartment-1"
+            id="apartment-1"
+            data-details="false"
+          >
+            <td>دمشق</td>
+            <td>شقه غرفة و صالة مساحه 70م</td>
+            <td>200000 ل.س</td>
+            <td
+              class="showMore"
+              onclick="showDetails(this.parentElement.dataset.apartment)"
+            >
+              <div class="icon">
+                <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+              </div>
+            </td>
+            <td class="checkbox">
+              <label for="apartment-1-checkbox">
+                <input type="checkbox" id="apartment-1-checkbox" />
+                <span class="material-symbols-outlined check-icon">
+                  check
+                </span>
+              </label>
+            </td>
+          </tr>
+          <tr class="details apartment-1">
+            <td colspan="2">
+              <span>المنطقه: ركن الدين</span>
+            </td>
+            <td colspan="1">
+              <span>متوفر كراج</span>
+            </td>
+            <td colspan="2">
+              <span>الطابق الثالث</span>
+            </td>
+          </tr>
+          <tr class="details apartment-1">
+            <td colspan="2">
+              <span>الملكية: طابو</span>
+            </td>
+            <td colspan="1">
+              <span>بلكون مساحه 12</span>
+            </td>
+            <td colspan="2">
+              <span>مفروشة</span>
+            </td>
+          </tr>
+          <tr class="details images apartment-1">
+            <td colspan="2">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBa17Kd1viMz2tCNgnreJsCNkAQ3IMtrZVdg&s" alt="" />
+            </td>
+            <td colspan="1">
+              <img src="https://www.shof3qar.com/thumb_watermark/10fc925e70ab9898d9dde3308e1367ac.jpg" alt="" />
+            </td>
+            <td colspan="2">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLN3CK5L5njqwP34TDWqhzGdBEd0QCrqx3IO7ZFW73hzFCudPanks6P-BURNkBQHw8Iog&usqp=CAU" alt="" />
+            </td>
+          </tr>
+        </div>
+        <div class="apartment">
+          <tr
+            data-apartment="apartment-2"
+            id="apartment-2"
+            data-details="false"
+          >
+            <td>حماه</td>
+            <td>شقة اربع غرف و صالة مساحة 160م</td>
+            <td>500000 ل.س</td>
+            <td
+              class="showMore"
+              onclick="showDetails(this.parentElement.dataset.apartment)"
+            >
+              <div class="icon">
+                <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+              </div>
+            </td>
+            <td class="checkbox">
+              <label for="apartment-2-checkbox">
+                <input type="checkbox" id="apartment-2-checkbox" />
+                <span class="material-symbols-outlined check-icon">
+                  check
+                </span>
+              </label>
+            </td>
+          </tr>
+          <tr class="details apartment-2">
+            <td colspan="2">
+              <span>المنطقه: الشريعة </span>
+            </td>
+            <td colspan="1">
+              <span>متوفر كراج</span>
+            </td>
+            <td colspan="2">
+              <span>الطابق الثاني</span>
+            </td>
+          </tr>
+          <tr class="details apartment-2">
+            <td colspan="2">
+              <span>الملكية: طابو</span>
+            </td>
+            <td colspan="1">
+              <span>بلكون مساحه 9</span>
+            </td>
+            <td colspan="2">
+              <span>مفروشة</span>
+            </td>
+          </tr>
+          <tr class="details images apartment-2">
+            <td colspan="2">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgMFQ-3cKrIfaozmXzlTcha2_dPoxkwd72KL6kouefERs8c-XN_oQU1oodbrKUtfb2SIM&usqp=CAU"
+                alt=""
+              />
+            </td>
+            <td colspan="1">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTumumw8QEivef357nEDc34qD7uLZMF_sRI1d_9MDkLGkIQ062bW65YcaXCI2W4wwrdsMc&usqp=CAU"
+                alt=""
+              />
+            </td>
+            <td colspan="2">
+              <img
+                src="https://res.listglobally.com/listings/6132703/98075072/e5ec36334ee7c2b6b3ba3fab530f7181?mode=crop&height=300"
+                alt=""
+              />
+            </td>
+          </tr>
+        </div>
+        <div class="apartment">
+          <tr
+            data-apartment="apartment-3"
+            id="apartment-3"
+            data-details="false"
+          >
+            <td>اللاذقية</td>
+            <td>شقة غرفتين مساحة 90 م</td>
+            <td>200000 ل.س</td>
+            <td
+              class="showMore"
+              onclick="showDetails(this.parentElement.dataset.apartment)"
+            >
+              <div class="icon">
+                <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+              </div>
+            </td>
+            <td class="checkbox">
+              <label for="apartment-3-checkbox">
+                <input type="checkbox" id="apartment-3-checkbox" />
+                <span class="material-symbols-outlined check-icon">
+                  check
+                </span>
+              </label>
+            </td>
+          </tr>
+          <tr class="details apartment-3">
+            <td colspan="2">
+              <span>المنطقة : قرية السمرة </span>
+            </td>
+            <td colspan="1">
+              <span>متوفر كراج</span>
+            </td>
+            <td colspan="2">
+              <span>الطابق الاول </span>
+            </td>
+          </tr>
+          <tr class="details apartment-3">
+            <td colspan="2">
+              <span>الملكية: طابو</span>
+            </td>
+            <td colspan="1">
+              <span>بلكون مساحه 12</span>
+            </td>
+            <td colspan="2">
+              <span>مفروشة </span>
+            </td>
+          </tr>
+          <tr class="details images apartment-3">
+            <td colspan="2">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoanLBAdeTIYXP7ozNAOgKYIHSVhMr1p2WpgtnyhJE7K2kLy1jNw37mjamlJaKjl6z93w&usqp=CAU"
+                alt=""
+              />
+            </td>
+            <td colspan="1">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1xpBHxKhA9nxMb-h7APMAA4lM2dUoYWnhm8u3eiZFucb0OcfKgSE1LX-11t6BQD-QmHw&usqp=CAU"
+                alt=""
+              />
+            </td>
+            <td colspan="2">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjgz4oF2Jvuxbx4M8R4ZrZYGZHXsMWE-DBXg&s"
+                alt=""
+              />
+            </td>
+          </tr>
+        </div>
+        <div class="apartment">
+          <tr
+            data-apartment="apartment-4"
+            id="apartment-4"
+            data-details="false"
+          >
+            <td>اللاذقية</td>
+            <td>دكان بمساحة 40 م مع مستودع </td>
+            <td>200000 ل.س</td>
+            <td
+              class="showMore"
+              onclick="showDetails(this.parentElement.dataset.apartment)"
+            >
+              <div class="icon">
+                <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+              </div>
+            </td>
+            <td class="checkbox">
+              <label for="choose">
+                <input type="checkbox" id="choose" />
+                <span class="material-symbols-outlined check-icon">
+                  check
+                </span>
+              </label>
+            </td>
+          </tr>
+          <tr class="details apartment-4">
+            <td colspan="2">
+              <span>المنطقة : قرية السمرة </span>
+            </td>
+            <td colspan="1">
+              <span>متوفر مستودع</span>
+            </td>
+            <td colspan="2">
+              <span>الطابق الاول </span>
+            </td>
+          </tr>
+          <tr class="details apartment-4">
+            <td colspan="2">
+              <span>الملكية: طابو</span>
+            </td>
+            <td colspan="1">
+              <span>واجهة على شارع رئيسي</span>
+            </td>
+            <td colspan="2">
+              <span>إطلالة مميزة  </span>
+            </td>
+          </tr>
+          <tr class="details images apartment-4">
+            <td colspan="2">
+              <img
+                src="https://elarabiadesign.com/wp-content/uploads/2021/11/%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D8%AF%D9%8A%D9%83%D9%88%D8%B1-%D9%85%D8%AD%D9%84-%D9%85%D9%84%D8%A7%D8%A8%D8%B3-2.jpg"
+                alt=""
+              />
+            </td>
+            <td colspan="1">
+              <img
+                src="https://advancedluxury.com.sa/wp-content/uploads/2023/12/%D8%AF%D9%8A%D9%83%D9%88%D8%B1%D8%A7%D8%AA-%D9%85%D8%AD%D9%84%D8%A7%D8%AA-%D9%85%D9%84%D8%A7%D8%A8%D8%B3.webp"
+                alt=""
+              />
+            </td>
+            <td colspan="2">
+              <img
+                src="https://www.tdhegypt.com/uploads/blogitems/source/56619.webp"
+                alt=""
+              />
+            </td>
+          </tr>
+        </div>
+        <div class="apartment">
+          <tr
+            data-apartment="apartment-5"
+            id="apartment-5"
+            data-details="false"
+          >
+            <td>دمشق</td>
+            <td>شقة 4 غرف مساحة 200 م</td>
+            <td>500000 ل.س</td>
+            <td
+              class="showMore"
+              onclick="showDetails(this.parentElement.dataset.apartment)"
+            >
+              <div class="icon">
+                <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+              </div>
+            </td>
+            <td class="checkbox">
+              <label for="apartment-5-checkbox">
+                <input type="checkbox" id="apartment-5-checkbox" />
+                <span class="material-symbols-outlined check-icon">
+                  check
+                </span>
+              </label>
+            </td>
+          </tr>
+          <tr class="details apartment-5">
+            <td colspan="2">
+              <span>المنطقة جرمانا </span>
+            </td>
+            <td colspan="1">
+              <span>متوفر كراج</span>
+            </td>
+            <td colspan="2">
+              <span>الطابق السادس </span>
+            </td>
+          </tr>
+          <tr class="details apartment-5">
+            <td colspan="2">
+              <span>الملكية: طابو</span>
+            </td>
+            <td colspan="1">
+              <span>بلكون مساحه 4</span>
+            </td>
+            <td colspan="2">
+              <span>مفروشة </span>
+            </td>
+          </tr>
+          <tr class="details images apartment-5">
+            <td colspan="2">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlKOB1PxKt3BH3VmDfnKmMfpb9Tr3ahetUZruq8EcNbi9WZv4VqnLY8ZgM-nAaBtJh7bc&usqp=CAU"
+                alt=""
+              />
+            </td>
+            <td colspan="1">
+              <img src="https://www.ra2ed.com/big/1-12579.jpg" alt="" />
+            </td>
+            <td colspan="2">
+              <img
+                src="data:image/jpeg;base64,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"
+                alt=""
+              />
+            </td>
+          </tr>
+        </div>
+        <div class="apartment">
+          <tr
+            data-apartment="apartment-6"
+            id="apartment-6"
+            data-details="false"
+          >
+            <td>دمشق</td>
+            <td>شقة غرفتين مساحة 100 م</td>
+            <td>200000 ل.س</td>
+            <td
+              class="showMore"
+              onclick="showDetails(this.parentElement.dataset.apartment)"
+            >
+              <div class="icon">
+                <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+              </div>
+            </td>
+            <td class="checkbox">
+              <label for="apartment-6-checkbox">
+                <input type="checkbox" id="apartment-6-checkbox" />
+                <span class="material-symbols-outlined check-icon">
+                  check
+                </span>
+              </label>
+            </td>
+          </tr>
+          <tr class="details apartment-6">
+            <td colspan="2">
+              <span>المنطقة : الغوطة </span>
+            </td>
+            <td colspan="1">
+              <span>متوفر كراج</span>
+            </td>
+            <td colspan="2">
+              <span>الطابق الثاني </span>
+            </td>
+          </tr>
+          <tr class="details apartment-6">
+            <td colspan="2">
+              <span>الملكية: طابو</span>
+            </td>
+            <td colspan="1">
+              <span>بلكون مساحه 12</span>
+            </td>
+            <td colspan="2">
+              <span>مفروشة </span>
+            </td>
+          </tr>
+          <tr class="details images apartment-6">
+            <td colspan="2">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoanLBAdeTIYXP7ozNAOgKYIHSVhMr1p2WpgtnyhJE7K2kLy1jNw37mjamlJaKjl6z93w&usqp=CAU"
+                alt=""
+              />
+            </td>
+            <td colspan="1">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1xpBHxKhA9nxMb-h7APMAA4lM2dUoYWnhm8u3eiZFucb0OcfKgSE1LX-11t6BQD-QmHw&usqp=CAU"
+                alt=""
+              />
+            </td>
+            <td colspan="2">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjgz4oF2Jvuxbx4M8R4ZrZYGZHXsMWE-DBXg&s"
+                alt=""
+              />
+            </td>
+          </tr>
+        </div>
+        <div class="apartment">
+          <tr
+            data-apartment="apartment-7"
+            id="apartment-7"
+            data-details="false"
+          >
+            <td>حلب</td>
+            <td>شقة 4 غرف مساحة 200 م</td>
+            <td>500000 ل.س</td>
+            <td
+              class="showMore"
+              onclick="showDetails(this.parentElement.dataset.apartment)"
+            >
+              <div class="icon">
+                <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+              </div>
+            </td>
+            <td class="checkbox">
+              <label for="apartment-7-checkbox">
+                <input type="checkbox" id="apartment-7-checkbox" />
+                <span class="material-symbols-outlined check-icon">
+                  check
+                </span>
+              </label>
+            </td>
+          </tr>
+          <tr class="details apartment-7">
+            <td colspan="2">
+              <span>المنطقة : سيف الدولة </span>
+            </td>
+            <td colspan="1">
+              <span>متوفر كراج</span>
+            </td>
+            <td colspan="2">
+              <span>الطابق الثاني </span>
+            </td>
+          </tr>
+          <tr class="details apartment-7">
+            <td colspan="2">
+              <span>الملكية: طابو</span>
+            </td>
+            <td colspan="1">
+              <span>بلكون مساحه 12</span>
+            </td>
+            <td colspan="2">
+              <span>مفروشة </span>
+            </td>
+          </tr>
+          <tr class="details images apartment-7">
+            <td colspan="2">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoanLBAdeTIYXP7ozNAOgKYIHSVhMr1p2WpgtnyhJE7K2kLy1jNw37mjamlJaKjl6z93w&usqp=CAU"
+                alt=""
+              />
+            </td>
+            <td colspan="1">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1xpBHxKhA9nxMb-h7APMAA4lM2dUoYWnhm8u3eiZFucb0OcfKgSE1LX-11t6BQD-QmHw&usqp=CAU"
+                alt=""
+              />
+            </td>
+            <td colspan="2">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjgz4oF2Jvuxbx4M8R4ZrZYGZHXsMWE-DBXg&s"
+                alt=""
+              />
+            </td>
+          </tr>
+        </div>
+        <div class="apartment">
+          <tr
+            data-apartment="apartment-8"
+            id="apartment-8"
+            data-details="false"
+          >
+            <td>حماه</td>
+            <td>شقة 3 غرف مساحة 140 م</td>
+            <td>200000 ل.س</td>
+            <td
+              class="showMore"
+              onclick="showDetails(this.parentElement.dataset.apartment)"
+            >
+              <div class="icon">
+                <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+              </div>
+            </td>
+            <td class="checkbox">
+              <label for="apartment-8-checkbox">
+                <input type="checkbox" id="apartment-8-checkbox" />
+                <span class="material-symbols-outlined check-icon">
+                  check
+                </span>
+              </label>
+            </td>
+          </tr>
+          <tr class="details apartment-8">
+            <td colspan="2">
+              <span>المنطقة : القصور </span>
+            </td>
+            <td colspan="1">
+              <span>متوفر كراج</span>
+            </td>
+            <td colspan="2">
+              <span>الطابق الثاني </span>
+            </td>
+          </tr>
+          <tr class="details apartment-8">
+            <td colspan="2">
+              <span>الملكية: طابو</span>
+            </td>
+            <td colspan="1">
+              <span>بلكون مساحه 12</span>
+            </td>
+            <td colspan="2">
+              <span>مفروشة </span>
+            </td>
+          </tr>
+          <tr class="details images apartment-8">
+            <td colspan="2">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoanLBAdeTIYXP7ozNAOgKYIHSVhMr1p2WpgtnyhJE7K2kLy1jNw37mjamlJaKjl6z93w&usqp=CAU"
+                alt=""
+              />
+            </td>
+            <td colspan="1">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1xpBHxKhA9nxMb-h7APMAA4lM2dUoYWnhm8u3eiZFucb0OcfKgSE1LX-11t6BQD-QmHw&usqp=CAU"
+                alt=""
+              />
+            </td>
+            <td colspan="2">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjgz4oF2Jvuxbx4M8R4ZrZYGZHXsMWE-DBXg&s"
+                alt=""
+              />
+            </td>
+          </tr>
+        </div>
+        <div class="apartment">
+          <tr
+            data-apartment="apartment-9"
+            id="apartment-9"
+            data-details="false"
+          >
+            <td>اللاذقية</td>
+            <td>شقة غرفتين مساحة 90 م</td>
+            <td>200000 ل.س</td>
+            <td
+              class="showMore"
+              onclick="showDetails(this.parentElement.dataset.apartment)"
+            >
+              <div class="icon">
+                <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+              </div>
+            </td>
+            <td class="checkbox">
+              <label for="apartment-9-checkbox">
+                <input type="checkbox" id="apartment-9-checkbox" />
+                <span class="material-symbols-outlined check-icon">
+                  check
+                </span>
+              </label>
+            </td>
+          </tr>
+          <tr class="details apartment-9">
+            <td colspan="2">
+              <span>المنطقة : قرية السمرة </span>
+            </td>
+            <td colspan="1">
+              <span>متوفر كراج</span>
+            </td>
+            <td colspan="2">
+              <span>الطابق الاول </span>
+            </td>
+          </tr>
+          <tr class="details apartment-9">
+            <td colspan="2">
+              <span>الملكية: طابو</span>
+            </td>
+            <td colspan="1">
+              <span>بلكون مساحه 12</span>
+            </td>
+            <td colspan="2">
+              <span>مفروشة </span>
+            </td>
+          </tr>
+          <tr class="details images apartment-9">
+            <td colspan="2">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoanLBAdeTIYXP7ozNAOgKYIHSVhMr1p2WpgtnyhJE7K2kLy1jNw37mjamlJaKjl6z93w&usqp=CAU"
+                alt=""
+              />
+            </td>
+            <td colspan="1">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1xpBHxKhA9nxMb-h7APMAA4lM2dUoYWnhm8u3eiZFucb0OcfKgSE1LX-11t6BQD-QmHw&usqp=CAU"
+                alt=""
+              />
+            </td>
+            <td colspan="2">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjgz4oF2Jvuxbx4M8R4ZrZYGZHXsMWE-DBXg&s"
+                alt=""
+              />
+            </td>
+          </tr>
+        </div>
+        <div class="apartment">
+          <tr
+            data-apartment="apartment-10"
+            id="apartment-10"
+            data-details="false"
+          >
+            <td>حلب</td>
+            <td>شقة غرفتين مساحة 90 م</td>
+            <td>200000 ل.س</td>
+            <td
+              class="showMore"
+              onclick="showDetails(this.parentElement.dataset.apartment)"
+            >
+              <div class="icon">
+                <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+              </div>
+            </td>
+            <td class="checkbox">
+              <label for="apartment-10-checkbox">
+                <input type="checkbox" id="apartment-10-checkbox" />
+                <span class="material-symbols-outlined check-icon">
+                  check
+                </span>
+              </label>
+            </td>
+          </tr>
+          <tr class="details apartment-10">
+            <td colspan="2">
+              <span>المنطقة : الاشرفية </span>
+            </td>
+            <td colspan="1">
+              <span>متوفر كراج</span>
+            </td>
+            <td colspan="2">
+              <span>الطابق الثاني </span>
+            </td>
+          </tr>
+          <tr class="details apartment-10">
+            <td colspan="2">
+              <span>الملكية: طابو</span>
+            </td>
+            <td colspan="1">
+              <span>بلكون مساحه 12</span>
+            </td>
+            <td colspan="2">
+              <span>مفروشة </span>
+            </td>
+          </tr>
+          <tr class="details images apartment-10">
+            <td colspan="2">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoanLBAdeTIYXP7ozNAOgKYIHSVhMr1p2WpgtnyhJE7K2kLy1jNw37mjamlJaKjl6z93w&usqp=CAU"
+                alt=""
+              />
+            </td>
+            <td colspan="1">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1xpBHxKhA9nxMb-h7APMAA4lM2dUoYWnhm8u3eiZFucb0OcfKgSE1LX-11t6BQD-QmHw&usqp=CAU"
+                alt=""
+              />
+            </td>
+            <td colspan="2">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjgz4oF2Jvuxbx4M8R4ZrZYGZHXsMWE-DBXg&s"
+                alt=""
+              />
+            </td>
+          </tr>
+        </div>
+      </table>
+    </div>
+  </body>
+</html>
